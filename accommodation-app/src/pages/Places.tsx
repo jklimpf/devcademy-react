@@ -1,7 +1,5 @@
-import Layout from "../components/Layout/Layout";
-
 const Places = () => {
-  return <Layout></Layout>;
+  return <div></div>;
 };
 
 export default Places;

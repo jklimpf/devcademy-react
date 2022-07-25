@@ -1,7 +1,5 @@
-import Layout from "../components/Layout/Layout";
-
 const Booking = () => {
-  return <Layout></Layout>;
+  return <div></div>;
 };
 
 export default Booking;
