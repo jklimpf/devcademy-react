@@ -5,6 +5,7 @@ import Locations from "./pages/Locations";
 import Places from "./pages/Places";
 import Booking from "./pages/Booking";
 import Layout from "./components/Layout/Layout";
+import Footer from "./components/Layout/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/myPlaces" element={<Places />} />
         <Route path="/myBookings" element={<Booking />} />
       </Routes>
+      <Footer></Footer>
     </Layout>
   );
 }

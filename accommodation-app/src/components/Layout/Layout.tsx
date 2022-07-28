@@ -1,14 +1,13 @@
-import React, { Fragment } from "react";
-import Footer from "./Footer";
+import React from "react";
 import Navigation from "./Navigation";
+import classes from "./Layout.module.css";
 
 const Layout: React.FC<React.PropsWithChildren> = (props) => {
   return (
-    <Fragment>
+    <div className={classes.layout}>
       <Navigation></Navigation>
       {props.children}
-      <Footer></Footer>
-    </Fragment>
+    </div>
   );
 };
 

@@ -1,8 +1,8 @@
 .footer {
-  position: fixed;
-  left: 0;
+  position: relative;
   bottom: 0;
-  width: 100%;
+  width: auto;
+  margin-top: auto;
   background-color: rgb(29, 40, 59);
   height: 4rem;
   display: flex;
