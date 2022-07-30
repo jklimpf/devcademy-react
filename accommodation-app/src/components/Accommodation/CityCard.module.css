@@ -1,0 +1,28 @@
+.cityCardSection {
+  max-width: 75rem;
+  width: 75rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 4rem;
+}
+
+.cityCard {
+  position: relative;
+}
+
+.cityCard img {
+  filter: brightness(80%) saturate(210%) contrast(80%);
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  color: rgb(252, 250, 250);
+}
+
+.details p {
+  font-size: 1.3rem;
+  margin-top: -0.7rem;
+}

@@ -1,0 +1,29 @@
+.placeDiv p {
+  margin-top: -1rem;
+  color: rgb(112, 112, 112);
+}
+
+.placeDiv h3 {
+  font-size: 1.1rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.buttons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.buttons .delete {
+  margin-left: 1.5rem;
+  color: red;
+}
+.buttons .edit {
+  color: rgb(0, 128, 107);
+}

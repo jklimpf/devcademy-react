@@ -1,0 +1,14 @@
+.placeCardSection {
+  max-width: 75rem;
+  width: 75rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.placesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}

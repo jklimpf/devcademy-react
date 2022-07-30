@@ -1,0 +1,47 @@
+.accommodationDetails {
+  max-width: 75rem;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.description {
+  width: 60%;
+}
+
+.details {
+  position: relative;
+}
+.info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1.5rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title p {
+  margin-top: 1.2rem;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: rgb(124, 124, 124);
+  margin-top: -0.7rem;
+  margin-bottom: 2rem;
+}
+
+.descriptionParagraph {
+  line-height: 1.5rem;
+}
