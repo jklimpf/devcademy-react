@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 4rem;
+  padding: 0 2rem;
 }
 
 .details p {

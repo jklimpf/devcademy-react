@@ -1,8 +1,9 @@
 import { Fragment } from "react";
 import Header from "../components/Layout/Header";
 import AccommodationDetails from "../components/Accommodation/AccommodationDetails";
-import CityCard from "../components/Accommodation/CityCard";
-import AccomCard from "../components/Accommodation/AccomCard";
+
+import AccomCard from "../components/Homes/AccomCard";
+import Locations from "../components/Locations/Locations";
 
 const accommodationDataJSON = `{"title": "Poseidon Hotel Suites",  
 "subtitle": "Stay in the heart of Mýkonos City",  
@@ -16,11 +17,6 @@ const accommodationDataJSON = `{"title": "Poseidon Hotel Suites",
 "location": "Mýkonos City",  
 "postalCode": "846 00"}`;
 
-const cityCardDataJSON = `{  
-	"name": "London",  
-	"count": "5102"  
-}`;
-
 const accommCardDataJSON = `{
   
     "title": "Sugar & Spice Apartments"  ,
@@ -33,18 +29,14 @@ const accommCardDataJSON = `{
 const Main = () => {
   const accommodationData = JSON.parse(accommodationDataJSON);
 
-  const cityCardData = JSON.parse(cityCardDataJSON);
-
   const accommCardData = JSON.parse(accommCardDataJSON);
-
-  console.log(accommCardData);
 
   return (
     <Fragment>
       <Header></Header>
       <AccommodationDetails {...accommodationData}></AccommodationDetails>
-      <CityCard {...cityCardData}></CityCard>
       <AccomCard {...accommCardData}></AccomCard>
+      <Locations></Locations>
     </Fragment>
   );
 };
