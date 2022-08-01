@@ -32,9 +32,13 @@ label {
   padding: 1rem;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 15px;
-  max-width: 77rem;
+  width: 78rem;
   margin: auto;
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -4.5rem;
+  background-color: white;
 }
 
 .form button {
@@ -44,4 +48,9 @@ label {
   border: none;
   cursor: pointer;
   color: white;
+}
+
+.searchContainer {
+  height: 3rem;
+  position: relative;
 }
