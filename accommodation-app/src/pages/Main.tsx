@@ -4,6 +4,7 @@ import AccommodationDetails from "../components/Accommodation/AccommodationDetai
 
 import Locations from "../components/Locations/Locations";
 import HomesSection from "../components/Homes/HomesSection";
+import AccommodationSearch from "../components/Forms/AccommodationSearch";
 
 const accommodationDataJSON = `{"title": "Poseidon Hotel Suites",  
 "subtitle": "Stay in the heart of Mýkonos City",  
@@ -23,6 +24,7 @@ const Main = () => {
   return (
     <Fragment>
       <Header></Header>
+      <AccommodationSearch></AccommodationSearch>
       <AccommodationDetails {...accommodationData}></AccommodationDetails>
       <Locations></Locations>
       <HomesSection></HomesSection>
