@@ -6,6 +6,8 @@ import Places from "./pages/Places";
 import Booking from "./pages/Booking";
 import Layout from "./components/Layout/Layout";
 import Footer from "./components/Layout/Footer";
+import Homes from "./pages/Homes";
+import Reservation from "./components/Reservation/Reservation";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/locations" element={<Locations />} />
         <Route path="/myPlaces" element={<Places />} />
         <Route path="/myBookings" element={<Booking />} />
+        <Route path="/homes" element={<Homes />} />
+        <Route path="/reservation" element={<Reservation />} />
       </Routes>
       <Footer></Footer>
     </Layout>

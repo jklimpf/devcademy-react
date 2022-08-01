@@ -1,9 +1,6 @@
-import { Fragment } from "react";
-import Header from "../components/Layout/Header";
-import AccommodationDetails from "../components/Accommodation/AccommodationDetails";
-
-import Locations from "../components/Locations/Locations";
-import HomesSection from "../components/Homes/HomesSection";
+import classes from "./Reservation.module.css";
+import ReservationCard from "./ReservationCard";
+import ReservationForm from "./ReservationsForm";
 
 const accommodationDataJSON = `{"title": "Poseidon Hotel Suites",  
 "subtitle": "Stay in the heart of Mýkonos City",  
@@ -17,17 +14,22 @@ const accommodationDataJSON = `{"title": "Poseidon Hotel Suites",
 "location": "Mýkonos City",  
 "postalCode": "846 00"}`;
 
-const Main = () => {
+const Reservation = () => {
   const accommodationData = JSON.parse(accommodationDataJSON);
 
   return (
-    <Fragment>
-      <Header></Header>
-      <AccommodationDetails {...accommodationData}></AccommodationDetails>
-      <Locations></Locations>
-      <HomesSection></HomesSection>
-    </Fragment>
+    <div className={classes.reservationContainer}>
+      <h1>Book your stay</h1>
+      <div className={classes.reservation}>
+        <div>
+          <ReservationForm></ReservationForm>
+          <div className={classes.resCard}>
+            <ReservationCard {...accommodationData}></ReservationCard>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Main;
+export default Reservation;
