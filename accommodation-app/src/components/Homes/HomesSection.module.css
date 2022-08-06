@@ -1,0 +1,28 @@
+.homesSection {
+  max-width: 80rem;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.accomCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 218, 218);
+  font-family: FontAwesome;
+  cursor: pointer;
+}

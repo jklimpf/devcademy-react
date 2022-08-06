@@ -1,0 +1,56 @@
+.inputWrapper {
+  position: relative;
+}
+
+input {
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 3px;
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  line-height: 6ex;
+}
+
+label {
+  position: absolute;
+  top: 0.2ex;
+  z-index: 1;
+  left: 2em;
+  background-color: white;
+  padding: 0 5px;
+  color: rgb(197, 196, 196);
+  font-size: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchDiv {
+  padding: 1rem;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 15px;
+  width: 78rem;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -4.5rem;
+  background-color: white;
+}
+
+.form button {
+  width: 7rem;
+  height: 2.9rem;
+  background-color: aquamarine;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.searchContainer {
+  height: 3rem;
+  position: relative;
+}

@@ -1,12 +1,3 @@
-.cityCardSection {
-  max-width: 75rem;
-  width: 75rem;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 4rem;
-}
-
 .cityCard {
   position: relative;
 }

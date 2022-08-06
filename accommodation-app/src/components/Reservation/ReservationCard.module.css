@@ -1,0 +1,21 @@
+.reservationCard {
+  width: 38rem;
+  padding: 0 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid 1px rgb(228, 228, 228);
+}
+
+.reservationCard img {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.details {
+  padding-left: 1rem;
+}

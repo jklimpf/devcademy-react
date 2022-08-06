@@ -1,0 +1,20 @@
+.reservationContainer {
+  max-width: 80rem;
+  width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.reservation {
+  position: relative;
+}
+
+.resCard {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.reservationContainer h1 {
+  margin-bottom: 2rem;
+}

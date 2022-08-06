@@ -1,0 +1,26 @@
+.inputWrapper {
+  position: relative;
+}
+
+.form {
+  padding-top: 1rem;
+  margin: -0.6rem;
+}
+
+.inputWrapper input {
+  width: 25rem;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+}
+
+.formContainer button {
+  width: 7rem;
+  height: 2.9rem;
+  background-color: aquamarine;
+  border: none;
+  cursor: pointer;
+  color: white;
+}

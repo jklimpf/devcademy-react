@@ -1,5 +1,6 @@
 import { FC } from "react";
 import classes from "./PropertyInfo.module.css";
+import { useNavigate } from "react-router-dom";
 
 const PropertyInfo: FC<{
   personCount: number;
@@ -8,6 +9,12 @@ const PropertyInfo: FC<{
   location: string;
   postalCode: string;
 }> = (props) => {
+  const navigate = useNavigate();
+
+  const reservationHandler = () => {
+    navigate("/reservation");
+  };
+
   return (
     <div className={classes.info}>
       <h4>Property info</h4>
@@ -16,7 +23,9 @@ const PropertyInfo: FC<{
       <p>EUR {props.price} per night</p>
       <p>{props.location}</p>
       <p>{props.postalCode}</p>
-      <button className={classes.btn}>BOOK A STAY &#160; &#xf061;</button>
+      <button onClick={reservationHandler} className={classes.btn}>
+        BOOK A STAY &#160; &#xf061;
+      </button>
     </div>
   );
 };
