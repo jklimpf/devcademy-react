@@ -1,8 +1,19 @@
 import classes from "./AccommodationSearch.module.css";
 import React from "react";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
+interface SearchLocation {
+  location: string;
+  checkIn: string;
+  checkOut: string;
+  numberOfPeople: number;
+  accomType: string;
+}
 
 const AccommodationSearch = () => {
+  const navigate = useNavigate();
+
   const whereRef = useRef<HTMLInputElement>(null);
   const checkInRef = useRef<HTMLInputElement>(null);
   const checkOutRef = useRef<HTMLInputElement>(null);
@@ -18,7 +29,17 @@ const AccommodationSearch = () => {
     const people = peopleRef.current?.value;
     const accomType = accomTypeRef.current?.value;
 
-    console.log(where, checkIn, checkOut, people, accomType);
+    if (where && checkIn && checkOut && people && accomType) {
+      const data: SearchLocation = {
+        location: where,
+        checkIn,
+        checkOut,
+        numberOfPeople: +people,
+        accomType,
+      };
+
+      navigate("/searchResult", { state: { location: where } });
+    }
   };
   return (
     <div className={classes.searchContainer}>

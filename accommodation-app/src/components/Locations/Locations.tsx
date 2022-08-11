@@ -1,14 +1,13 @@
 import classes from "./Locations.module.css";
 import CityCard from "./CityCard";
 import { useNavigate } from "react-router-dom";
-
-const cityCardDataJSON = `{  
-	"name": "London",  
-	"count": "5102"  
-}`;
+import { cityCardDataJSON } from "../../data/city-card-data";
 
 const Locations = () => {
   const cityCardData = JSON.parse(cityCardDataJSON);
+
+  const cityCardList = new Array(15).fill(cityCardData);
+
   let navigate = useNavigate();
 
   const locationHandler = () => {
@@ -24,11 +23,9 @@ const Locations = () => {
         </button>
       </div>
       <div className={classes.cityCards}>
-        <CityCard {...cityCardData}></CityCard>
-        <CityCard {...cityCardData}></CityCard>
-        <CityCard {...cityCardData}></CityCard>
-        <CityCard {...cityCardData}></CityCard>
-        <CityCard {...cityCardData}></CityCard>
+        {cityCardList.map((card) => (
+          <CityCard key={Math.random()} {...card}></CityCard>
+        ))}
       </div>
     </section>
   );

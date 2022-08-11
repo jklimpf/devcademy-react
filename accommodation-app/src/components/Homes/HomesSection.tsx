@@ -1,19 +1,13 @@
 import AccomCard from "./AccomCard";
 import classes from "./HomesSection.module.css";
 import { useNavigate } from "react-router-dom";
-
-const accommCardDataJSON = `{
-  
-    "title": "Sugar & Spice Apartments"  ,
-    "location": "Split"  ,
-    "price": 75  ,
-    "categorization": 3  
-  
-}`;
+import { accommCardDataJSON } from "../../data/accomCard-data";
 
 const HomesSection = () => {
   const accommCardData = JSON.parse(accommCardDataJSON);
   const navigate = useNavigate();
+
+  const accommCardList = new Array(15).fill(accommCardData);
 
   const homesHandler = () => {
     navigate("/homes");
@@ -28,12 +22,9 @@ const HomesSection = () => {
         </button>
       </div>
       <div className={classes.accomCard}>
-        <AccomCard {...accommCardData}></AccomCard>
-        <AccomCard {...accommCardData}></AccomCard>
-        <AccomCard {...accommCardData}></AccomCard>
-        <AccomCard {...accommCardData}></AccomCard>
-        <AccomCard {...accommCardData}></AccomCard>
-        <AccomCard {...accommCardData}></AccomCard>
+        {accommCardList.map((card) => (
+          <AccomCard key={Math.random()} {...card}></AccomCard>
+        ))}
       </div>
     </section>
   );

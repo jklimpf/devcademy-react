@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
+import ScrollToTop from "./ScrollToTop";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,6 +12,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop></ScrollToTop>
+
       <App />
     </BrowserRouter>
   </React.StrictMode>
